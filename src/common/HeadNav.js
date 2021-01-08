@@ -1,6 +1,3 @@
-/**
- * Created by webmxjon 2018/5/25.
- */
 import React,{Component} from 'react';
 import {Button, Menu} from 'antd';
 import { GlobalOutlined } from '@ant-design/icons';
