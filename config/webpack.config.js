@@ -475,6 +475,7 @@ module.exports = function (webpackEnv) {
               exclude: cssModuleRegex,
               use: getStyleLoaders({
                 importLoaders: 1,
+                modules:true,
                 sourceMap: isEnvProduction
                   ? shouldUseSourceMap
                   : isEnvDevelopment,
@@ -491,6 +492,7 @@ module.exports = function (webpackEnv) {
               test: cssModuleRegex,
               use: getStyleLoaders({
                 importLoaders: 1,
+                modules:true,
                 sourceMap: isEnvProduction
                   ? shouldUseSourceMap
                   : isEnvDevelopment,
@@ -503,6 +505,7 @@ module.exports = function (webpackEnv) {
                   exclude: cssModuleRegex,
                   use: getStyleLoaders({
                     importLoaders: 1,
+                    modules:true,
                     sourceMap: isEnvProduction && shouldUseSourceMap,
                   }),
                   sideEffects: true,
@@ -511,6 +514,7 @@ module.exports = function (webpackEnv) {
               test: lessModuleRegex,
               use: getStyleLoaders({
                 importLoaders: 1,
+                modules:true,
                 sourceMap: isEnvProduction && shouldUseSourceMap,
                 modules: true,
                 getLocalIdent: getCSSModuleLocalIdent,
@@ -525,6 +529,7 @@ module.exports = function (webpackEnv) {
               use: getStyleLoaders(
                 {
                   importLoaders: 3,
+                  modules:true,
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
@@ -544,6 +549,7 @@ module.exports = function (webpackEnv) {
               use: getStyleLoaders(
                 {
                   importLoaders: 3,
+                  modules:true,
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
